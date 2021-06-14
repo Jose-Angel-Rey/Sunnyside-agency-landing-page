@@ -12,14 +12,21 @@
     min-height: 90vh;
     width: 100%;
 
+    // --- Container ---
     &__container {
         @include bdr;
         @include flexbox($justify:start);
         margin-top: 3rem;
         width: 90%;
-        // height: 60%;
     }
 
+    &__navbar {
+        @include bdr(blue);
+        @include flexbox($align:space-between);
+        width: 100%;
+    }
+
+    // --- Content ---
     &__content {
         @include bdr(green);
         color: $white;
