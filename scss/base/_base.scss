@@ -1,3 +1,13 @@
 // **************************
 //           BASE
 // **************************
+
+.main-container {
+    @include bdr;
+    @include flexbox;
+    width: 100%;
+    background-color: $dark-grayish-blue;
+}
+img{
+    max-width: 100%;
+}
