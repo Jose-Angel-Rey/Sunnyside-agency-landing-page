@@ -1,3 +1,52 @@
 // **************************
-//         VARIABLES
+//         MAIN HEADER
 // **************************
+
+.main-header {
+    @include bdr(cyan);
+    @include flexbox($justify:start);
+    background-image: url(../../images/mobile/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    min-height: 90vh;
+    width: 100%;
+
+    &__container {
+        @include bdr;
+        @include flexbox($justify:start);
+        margin-top: 3rem;
+        width: 90%;
+        // height: 60%;
+    }
+
+    &__content {
+        @include bdr(green);
+        color: $white;
+
+        font: {
+            size: 3rem;
+            family: $second-font;
+        }
+
+        letter-spacing: .6rem;
+
+        text: {
+            transform: uppercase;
+            align: center;
+        }
+
+        width: 100%;
+    }
+
+    &__title {
+        position: relative;
+
+        &::after {
+            content: url(../../images/icon-arrow-down.svg);
+            position: absolute;
+            top: 140%;
+            left: 45%;
+        }
+    }
+}
