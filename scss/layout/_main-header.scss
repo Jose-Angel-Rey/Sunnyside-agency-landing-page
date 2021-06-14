@@ -22,7 +22,7 @@
 
     &__navbar {
         @include bdr(blue);
-        @include flexbox($align:space-between);
+        @include flexbox($flow:row nowrap, $justify:space-between);
         width: 100%;
     }
 

@@ -6,8 +6,9 @@
     @include bdr;
     @include flexbox;
     width: 100%;
+    overflow-x: hidden;
     background-color: $dark-grayish-blue;
 }
 img{
-    max-width: 100%;
+    max-width: 80%;
 }

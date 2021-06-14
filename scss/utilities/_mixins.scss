@@ -7,12 +7,11 @@
 }
 
 // Flexbox
-@mixin flexbox($direction: column,
-    $wrap: nowrap,
+@mixin flexbox($flow: column nowrap,
     $justify: center,
     $align: center) {
     display: flex;
-    flex-flow: $direction $wrap;
+    flex-flow: $flow;
     justify-content: $justify;
     align-items: $align;
 }
