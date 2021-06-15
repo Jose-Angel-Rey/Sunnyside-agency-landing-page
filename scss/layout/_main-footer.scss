@@ -1,3 +1,15 @@
 // **************************
 //         VARIABLES
 // **************************
+
+.gallery {
+    display: flex;
+    width: 100%;
+
+    &__image {
+        min-height: 40vh;
+        max-height: 30rem;
+        object-fit: cover;
+        object-position: center;
+    }
+}
