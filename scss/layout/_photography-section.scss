@@ -1,3 +1,22 @@
-// **************************
-//         VARIABLES
-// **************************
+// *********************************************
+//       MAIN CONTENT - PHOTOGRAPHY SECTION
+// **********************************************
+
+.photography-section {
+    @extend .graphic-design-section;
+    background-image: url(../../images/mobile/image-photography.jpg);
+
+    &__article {
+        @extend .graphic-design-section__article;
+        color: $photography-text;
+
+        &-title {
+            @extend .graphic-design-section__article-title;
+        }
+
+        &-description {
+            @extend .graphic-design-section__article-description;
+        }
+    }
+
+}
