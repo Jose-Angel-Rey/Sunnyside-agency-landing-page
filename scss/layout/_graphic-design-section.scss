@@ -7,10 +7,14 @@
     background-image: url(../../images/mobile/image-graphic-design.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top;
+    background-position: center;
     min-height: 90vh;
     max-height: 60rem;
     width: 100%;
+
+    @media screen and (min-height:900px) {
+        min-height: 55vh;
+    }
 
     &__article {
         color: $graphic-design-text;
