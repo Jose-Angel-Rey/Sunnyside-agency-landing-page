@@ -3,14 +3,20 @@
 // *******************************************
 
 .transform-section {
-    @include bdr(blue);
     @include flexbox($flow:row wrap, $justify:space-between);
+    width: 100%;
 
+    // --- Image ---
     &__image {
         object-fit: cover;
         object-position: center;
-        height: 35rem;
+        min-height: 40vh;
+        max-height: 45rem;
         width: 100%;
+
+        @media screen and (min-width:750px) and (max-width:768px) {
+            width: 110%;
+        }
     }
 
 
@@ -21,7 +27,7 @@
         font-size: 1.7rem;
         padding: 5rem 0;
         text-align: center;
-        width: 100%;
+        width: 90%;
         max-width: 30rem;
 
         &-title {
