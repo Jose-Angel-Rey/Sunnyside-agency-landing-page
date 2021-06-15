@@ -1,0 +1,63 @@
+// *******************************************
+//     MAIN CONTENT - TESTIMONIALS
+// *******************************************
+
+.testimonials {
+    @include bdr;
+    @include flexbox($flow:row wrap);
+    text-align: center;
+    width: 100%;
+
+    &__title {
+        color: $grayish-blue;
+        font: 900 1.6rem $second-font;
+        letter-spacing: 5px;
+        margin: 5rem auto;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    &__container {
+        @include bdr;
+        @include flexbox;
+    }
+}
+
+
+.testimonial {
+    @include bdr(green);
+    font-size: 1.6rem;
+    margin: 1rem;
+    max-width: 28rem;
+
+    &__photo {
+        border-radius: 50%;
+        width: 6rem;
+    }
+
+    &__description {
+        color: $very-dark-grayish-blue;
+        line-height: 2.5rem;
+        margin: 2rem auto;
+    }
+
+    &__user-info {
+        @include bdr(red);
+        font-size: 1.5rem;
+    }
+
+    &__name {
+        color: $very-dark-desaturated-blue;
+        margin-bottom: 5px;
+
+        font: {
+            weight: 900;
+            family: $second-font;
+        }
+    }
+
+    &__role {
+        color: $grayish-blue;
+        font-size: 1.3rem;
+    }
+}
