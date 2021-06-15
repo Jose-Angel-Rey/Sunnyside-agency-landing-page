@@ -2,13 +2,14 @@
 //     MAIN CONTENT - TRANSFORM SECTION
 // *******************************************
 
-.transform-section {
+.stand-out-section {
     @include bdr(blue);
     @include flexbox($flow:row wrap, $justify:space-between);
-    // min-height: 70vh;
 
     &__image {
-        height: 50%;
+        object-fit: cover;
+        object-position: center;
+        height: 35rem;
         width: 100%;
     }
 
@@ -50,7 +51,8 @@
                 decoration: none;
                 transform: uppercase;
             }
-            &::after{
+
+            &::after {
                 content: "";
                 position: absolute;
                 bottom: 0;
