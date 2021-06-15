@@ -1,15 +1,54 @@
 // **************************
-//         VARIABLES
+//        MAIN FOOTER
 // **************************
 
-.gallery {
-    display: flex;
+.main-footer {
+    @include flexbox;
+    background-color: lighten($footer, 15%);
+    padding: 5rem 0;
     width: 100%;
 
-    &__image {
-        min-height: 40vh;
-        max-height: 30rem;
-        object-fit: cover;
-        object-position: center;
+    &__container {
+        @include flexbox;
+    }
+
+    &__navbar {
+        margin: 3rem auto 5rem;
+
+        &-link {
+            color: $graphic-design-text;
+            display: inline-block;
+            font-size: 1.7rem;
+            margin: 0 .5rem;
+            text-decoration: none;
+
+            @media screen and (min-width:360px) {
+                margin: 1rem;
+            }
+        }
+    }
+}
+
+.social-media-icons {
+    @include flexbox($flow:row nowrap, $justify:space-evenly);
+    width: 20rem;
+
+    .fab {
+        color: $graphic-design-text;
+        font-size: 2.4rem;
+
+    }
+}
+
+.attribution {
+    background-color: lighten($footer, 15%);
+    color: $graphic-design-text;
+    font-size: 1.7rem;
+    padding: 5rem 0;
+    text-align: center;
+    width: 100%;
+
+    a {
+        color: #eee;
     }
 }

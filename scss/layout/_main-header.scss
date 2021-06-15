@@ -12,8 +12,8 @@
     min-height: 90vh;
     width: 100%;
 
-    display: none;
-    
+    // display: none;
+
     @media screen and (max-height:450px) {
         min-height: 120vh;
     }
