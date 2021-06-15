@@ -8,6 +8,10 @@
     gap: 0;
     width: 100%;
 
+    @include for-medium-screens {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
     &__image {
         max-width: 102%;
         margin: -2px;

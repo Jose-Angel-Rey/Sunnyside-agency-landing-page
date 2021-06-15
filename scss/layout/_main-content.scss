@@ -2,8 +2,12 @@
 //       MAIN CONTENT
 // **************************
 
-.main-content{
+.main-content {
     @include bdr(rgb(0, 255, 55));
     @include flexbox;
     width: 100%;
+
+    @include for-medium-screens {
+        flex-flow: row wrap;
+    }
 }

@@ -5,6 +5,11 @@
 .stand-out-section {
     @extend .transform-section;
 
+    &__picture {
+        @extend .transform-section__picture;
+        order: 0;
+    }
+
     // --- Image ---
     &__image {
         @extend .transform-section__image;

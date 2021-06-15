@@ -14,6 +14,11 @@
 
     // display: none;
 
+    @include for-medium-screens {
+        background-image: url(../../images/desktop/image-header.jpg);
+        min-height: 100vh;
+    }
+
     @media screen and (max-height:450px) {
         min-height: 120vh;
     }
@@ -63,6 +68,11 @@
             position: absolute;
             top: 140%;
             left: 45%;
+
+            @include for-medium-screens {
+                top: 250%;
+                left: 48%;
+            }
         }
     }
 }

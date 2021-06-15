@@ -9,6 +9,17 @@
     width: 100%;
 
     // display: none;
+    &__container {
+        @include bdr;
+        @include flexbox($align:baseline);
+
+        @include for-medium-screens {
+            flex-flow: row nowrap;
+            margin-bottom: 10rem;
+            width: 90%;
+            max-width: 100rem;
+        }
+    }
 
     &__title {
         color: $grayish-blue;
@@ -17,49 +28,9 @@
         margin: 5rem auto;
         text-transform: uppercase;
         width: 100%;
-    }
 
-    &__container {
-        @include bdr;
-        @include flexbox;
-    }
-}
-
-
-.testimonial {
-    @include bdr(green);
-    font-size: 1.6rem;
-    margin: 1rem auto 8rem;
-    max-width: 28rem;
-
-    &__photo {
-        border-radius: 50%;
-        width: 6rem;
-    }
-
-    &__description {
-        color: $very-dark-grayish-blue;
-        line-height: 2.5rem;
-        margin: 2rem auto;
-    }
-
-    &__user-info {
-        @include bdr(red);
-        font-size: 1.8rem;
-        margin: 3rem auto 1rem;
-    }
-
-    &__name {
-        color: $very-dark-desaturated-blue;
-        margin-bottom: 1rem;
-
-        font: {
-            weight: 900;
-            family: $second-font;
+        @include for-medium-screens {
+            margin-top: 10rem;
         }
-    }
-
-    &__role {
-        color: $grayish-blue;
     }
 }

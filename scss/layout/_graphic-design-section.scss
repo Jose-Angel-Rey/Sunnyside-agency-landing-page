@@ -12,6 +12,11 @@
     max-height: 60rem;
     width: 100%;
 
+    @include for-medium-screens {
+        width: 50%;
+        margin-top: -3px;
+    }
+
     // display: none;
 
     @media screen and (min-height:900px) {

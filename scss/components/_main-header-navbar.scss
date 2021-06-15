@@ -17,6 +17,10 @@
 
     &__hamburger-btn {
         width: 3.5rem;
+
+        @include for-medium-screens {
+            display: none;
+        }
     }
 
     &__nav {
@@ -41,6 +45,18 @@
             clip-path: polygon(100% 0, 0% 100%, 100% 100%);
             width: 5rem;
             height: 5rem;
+
+            @include for-medium-screens {
+                display: none;
+            }
+        }
+
+        @include for-medium-screens {
+            @include flexbox($flow:row nowrap);
+            background: transparent;
+            max-width: 50rem;
+            transform: none;
+            position: static;
         }
     }
 
@@ -54,6 +70,13 @@
         margin: 4rem auto;
         text-decoration: none;
 
+        @include for-medium-screens {
+            color: $white;
+            font-size: 1.6rem;
+            margin: 0 1.5rem;
+            display: inline-block;
+        }
+
         &-cta {
             background-color: $text-decoration-yellow;
             border-radius: 3rem;
@@ -62,6 +85,15 @@
             padding: 2rem 4rem;
             text-transform: uppercase;
             width: fit-content;
+
+            @include for-medium-screens {
+                background-color: $white;
+                color: #000;
+                margin: 0;
+                padding: 1.5rem 3rem;
+            }
         }
+
+
     }
 }

@@ -7,6 +7,17 @@
     width: 100%;
     // display: none;
 
+    @include for-medium-screens {
+        flex-wrap: nowrap;
+    }
+
+    &__picture {
+        @include for-medium-screens {
+            width: 50%;
+            order: 2;
+        }
+    }
+
     // --- Image ---
     &__image {
         object-fit: cover;
@@ -17,6 +28,11 @@
 
         @media screen and (min-width:750px) and (max-width:768px) {
             width: 110%;
+        }
+
+        @include for-medium-screens {
+            width: 100%;
+            height: max-content;
         }
     }
 
@@ -30,6 +46,11 @@
         text-align: center;
         width: 90%;
         max-width: 30rem;
+
+        @include for-medium-screens {
+            width: 50%;
+
+        }
 
         &-title {
             font: {
