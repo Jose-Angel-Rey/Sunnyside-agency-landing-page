@@ -27,7 +27,7 @@
 .testimonial {
     @include bdr(green);
     font-size: 1.6rem;
-    margin: 1rem;
+    margin: 1rem auto 8rem;
     max-width: 28rem;
 
     &__photo {
