@@ -2,6 +2,66 @@
 //     MAIN CONTENT - TRANSFORM SECTION
 // *******************************************
 
-.Ttransform-section{
-    @include bdr(blue)
+.transform-section {
+    @include bdr(blue);
+    @include flexbox($flow:row wrap, $justify:space-between);
+    // min-height: 70vh;
+
+    &__image {
+        height: 50%;
+        width: 100%;
+    }
+
+
+    // --- Article ---
+    &__article {
+        @include h-center;
+        color: $very-dark-desaturated-blue;
+        font-size: 1.7rem;
+        padding: 5rem 0;
+        text-align: center;
+        width: 100%;
+        max-width: 30rem;
+
+        &-title {
+            font: {
+                size: 3rem;
+                family: $second-font;
+                weight: 900;
+            }
+        }
+
+        &-description {
+            color: $very-dark-grayish-blue;
+            line-height: 3rem;
+            margin: 3rem auto;
+        }
+
+        &-cta {
+            color: $very-dark-desaturated-blue;
+            position: relative;
+
+            font: {
+                family: $second-font;
+                weight: 900;
+            }
+
+            text: {
+                decoration: none;
+                transform: uppercase;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: -5%;
+                height: 8px;
+                width: 110%;
+                background-color: rgba($text-decoration-yellow, .3);
+            }
+
+        }
+
+
+    }
 }
