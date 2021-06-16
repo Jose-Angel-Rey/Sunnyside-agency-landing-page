@@ -3,7 +3,6 @@
 // **************************
 
 .main-header {
-    // @include bdr(cyan);
     @include flexbox($justify:start);
     background-image: url(../../images/mobile/image-header.jpg);
     background-repeat: no-repeat;
@@ -11,8 +10,6 @@
     background-position: center bottom;
     min-height: 90vh;
     width: 100%;
-
-    // display: none;
 
     @include for-medium-screens {
         background-image: url(../../images/desktop/image-header.jpg);
@@ -29,7 +26,6 @@
 
     // --- Container ---
     &__container {
-        @include bdr;
         @include flexbox($justify:start);
         margin-top: 3rem;
         width: 90%;
@@ -37,22 +33,19 @@
 
     // --- Content ---
     &__content {
-        @include bdr(green);
         color: $white;
+        letter-spacing: .6rem;
+        width: 100%;
 
         font: {
             size: 3rem;
             family: $second-font;
         }
 
-        letter-spacing: .6rem;
-
         text: {
             transform: uppercase;
             align: center;
         }
-
-        width: 100%;
 
         @media screen and(max-width: 355px) {
             font-size: 2.5rem;

@@ -4,7 +4,6 @@
 
 .main-header {
     &__navbar {
-        @include bdr(blue);
         @include flexbox($flow:row nowrap, $justify:space-between);
         margin-bottom: 15vh;
         position: relative;
