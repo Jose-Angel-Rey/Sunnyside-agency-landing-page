@@ -34,6 +34,11 @@
             width: 100%;
             height: max-content;
         }
+
+        @include for-large-screens {
+            min-height: auto;
+            max-height: none;
+        }
     }
 
 
@@ -49,7 +54,11 @@
 
         @include for-medium-screens {
             width: 50%;
+        }
 
+        @include for-large-screens {
+            text-align: left;
+            max-width: 43rem;
         }
 
         &-title {
@@ -58,6 +67,12 @@
                 family: $second-font;
                 weight: 900;
             }
+
+            @include for-large-screens {
+                font-size: 3.5rem;
+                width: 90%;
+            }
+
         }
 
         &-description {

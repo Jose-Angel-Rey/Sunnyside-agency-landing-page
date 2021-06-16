@@ -17,6 +17,10 @@
         margin-top: -3px;
     }
 
+    @include for-large-screens {
+        background-image: url(../../images/desktop/image-graphic-design.jpg);
+    }
+
     // display: none;
 
     @media screen and (min-height:900px) {
