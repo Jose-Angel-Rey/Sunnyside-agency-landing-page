@@ -17,7 +17,7 @@
             flex-flow: row nowrap;
             margin-bottom: 10rem;
             width: 90%;
-            max-width: 100rem;
+            max-width: 110rem;
         }
     }
 
@@ -31,6 +31,11 @@
 
         @include for-medium-screens {
             margin-top: 10rem;
+        }
+
+        @include for-large-screens {
+            font-size: 2rem;
+            margin: 15rem auto 8rem;
         }
     }
 }

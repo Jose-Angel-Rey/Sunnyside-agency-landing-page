@@ -10,9 +10,18 @@
     margin: 1rem auto 8rem;
     max-width: 28rem;
 
+    @include for-large-screens {
+        height: 35rem;
+        max-width: 30rem;
+    }
+
     &__photo {
         border-radius: 50%;
         width: 6rem;
+
+        @include for-large-screens {
+            width: 8rem;
+        }
     }
 
     &__description {
