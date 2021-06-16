@@ -1,15 +1,16 @@
 // **************************
-//        MAIN FOOTER
+//        ATTRIBUTION
 // **************************
 
-.main-footer {
-    @include flexbox;
+.attribution {
     background-color: lighten($footer, 15%);
+    color: $graphic-design-text;
+    font-size: 1.7rem;
     padding: 5rem 0;
+    text-align: center;
     width: 100%;
 
-    &__container {
-        @include flexbox;
+    a {
+        color: #eee;
     }
-
 }
