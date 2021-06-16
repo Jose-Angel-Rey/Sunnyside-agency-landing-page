@@ -89,18 +89,18 @@ ScrollReveal().reveal(".testimonial:last-of-type", {
   distance: "2rem",
 });
 
-ScrollReveal().reveal(".gallery__image:nth-child(odd)", {
+ScrollReveal().reveal(".gallery picture:nth-child(odd)", {
   duration: 2000,
   delay: 750,
-  origin: "left",
-  distance: "2rem",
+  origin: "bottom",
+  distance: "3rem",
 });
 
-ScrollReveal().reveal(".gallery__image:nth-child(even)", {
+ScrollReveal().reveal(".gallery picture:nth-child(even)", {
   duration: 2000,
-  delay: 750,
-  origin: "right",
-  distance: "2rem",
+  delay: 1000,
+  origin: "top",
+  distance: "3rem",
 });
 ScrollReveal().reveal(".main-footer__navbar", {
   duration: 2000,
