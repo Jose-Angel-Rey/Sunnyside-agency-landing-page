@@ -3,14 +3,12 @@
 // *******************************************
 
 .testimonials {
-    @include bdr;
     @include flexbox($flow:row wrap);
     text-align: center;
     width: 100%;
 
-    // display: none;
+    // --- Container ----
     &__container {
-        @include bdr;
         @include flexbox($align:baseline);
 
         @include for-medium-screens {
@@ -21,6 +19,7 @@
         }
     }
 
+    // --- Title ----
     &__title {
         color: $grayish-blue;
         font: 900 1.6rem $second-font;

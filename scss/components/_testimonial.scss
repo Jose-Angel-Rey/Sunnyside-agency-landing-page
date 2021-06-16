@@ -3,7 +3,6 @@
 // *******************************************
 
 .testimonial {
-    @include bdr(green);
     @include flexbox($justify:space-between);
     height: 30rem;
     font-size: 1.6rem;
@@ -15,6 +14,7 @@
         max-width: 30rem;
     }
 
+    // --- Photo ----
     &__photo {
         border-radius: 50%;
         width: 6rem;
@@ -24,14 +24,15 @@
         }
     }
 
+    // --- Description ----
     &__description {
         color: $very-dark-grayish-blue;
         line-height: 2.5rem;
         margin: 2rem auto;
     }
 
+    // --- User info ----
     &__user-info {
-        @include bdr(red);
         font-size: 1.8rem;
         margin: 3rem auto 1rem;
     }
@@ -48,5 +49,9 @@
 
     &__role {
         color: $grayish-blue;
+
+        @include for-large-screens {
+            font-size: 1.6rem;
+        }
     }
 }
