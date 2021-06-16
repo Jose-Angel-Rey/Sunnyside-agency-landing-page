@@ -58,6 +58,7 @@
 
         &::after {
             content: url(../../images/icon-arrow-down.svg);
+            animation: beat 1s 2s alternate infinite;
             position: absolute;
             top: 140%;
             left: 45%;

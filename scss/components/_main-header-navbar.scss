@@ -74,6 +74,16 @@
             font-size: 1.6rem;
             margin: 0 1.5rem;
             display: inline-block;
+            transition: all .5s;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+
+            &:active {
+                color: $text-decoration-yellow;
+                transform: scale(.95);
+            }
         }
 
         &-cta {
@@ -83,7 +93,18 @@
             font-family: $second-font;
             padding: 2rem 4rem;
             text-transform: uppercase;
+            transition: all .5s;
             width: fit-content;
+
+            &:hover {
+                background-color: #6FCFFF;
+                color: $white;
+            }
+
+            &:active {
+                background-color: darken(#6FCFFF, 5%);
+                transform: scale(.95);
+            }
 
             @include for-medium-screens {
                 background-color: $white;
