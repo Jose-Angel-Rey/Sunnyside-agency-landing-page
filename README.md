@@ -6,13 +6,14 @@
 
 ### Links
 
-- Live Site URL: [🚀🚀 Here 🚀🚀](#)
+- Live Site URL: [🚀🚀 Here 🚀🚀](https://sunnyside-agency-landing-page-jose-angel-rey.vercel.app/)
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- SASS
 - Mobile-first workflow
 - Vanilla Javascript
 
