@@ -8,7 +8,17 @@
 
     .fab {
         color: $graphic-design-text;
+        cursor: pointer;
         font-size: 2.4rem;
+        transition: all .5s;
 
+        &:hover {
+            color: $white;
+            transform: scale(1.1);
+        }
+
+        &:active {
+            transform: scale(.95);
+        }
     }
 }

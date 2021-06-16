@@ -7,3 +7,9 @@
         transform: scale(.9);
     }
 }
+
+@keyframes navbar-top-reveal {
+    to {
+        transform: none;
+    }
+}

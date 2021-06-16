@@ -35,11 +35,30 @@
             &::after {
                 content: "";
                 position: absolute;
-                bottom: 0;
+                bottom: -15%;
                 left: -5%;
                 height: 8px;
                 width: 110%;
-                background-color: rgba($text-decoration-soft-red, .3);
+                background-color: rgba($text-decoration-soft-red, .2);
+                border-radius: 2rem;
+                transition: all .5s;
+                z-index: 5;
+            }
+
+            &:hover {
+                transform: translateY(-5px);
+
+                &::after {
+                    background-color: rgba($text-decoration-soft-red, .5);
+                }
+            }
+
+            &:active {
+                transform: scale(.95);
+
+                &::after {
+                    background-color: rgba($text-decoration-soft-red, .9);
+                }
             }
 
         }

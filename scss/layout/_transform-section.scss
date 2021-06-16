@@ -82,7 +82,10 @@
 
         &-cta {
             color: $very-dark-desaturated-blue;
+            display: inline-block;
             position: relative;
+            z-index: 10;
+            transition: all .5s;
 
             font: {
                 family: $second-font;
@@ -97,11 +100,30 @@
             &::after {
                 content: "";
                 position: absolute;
-                bottom: 0;
+                bottom: -15%;
                 left: -5%;
                 height: 8px;
                 width: 110%;
-                background-color: rgba($text-decoration-yellow, .3);
+                background-color: rgba($text-decoration-yellow, .2);
+                border-radius: 2rem;
+                transition: all .5s;
+                z-index: 5;
+            }
+
+            &:hover {
+                transform: translateY(-5px);
+
+                &::after {
+                    background-color: rgba($text-decoration-yellow, .5);
+                }
+            }
+
+            &:active {
+                transform: scale(.95);
+
+                &::after {
+                    background-color: rgba($text-decoration-yellow, .9);
+                }
             }
 
         }
