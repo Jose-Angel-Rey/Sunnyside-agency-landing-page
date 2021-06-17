@@ -32,12 +32,13 @@
         @include h-center;
         color: $very-dark-desaturated-blue;
         font-size: 1.7rem;
-        // padding: 5rem 0;
+        padding: 5rem 0;
         text-align: center;
         width: 90%;
         max-width: 30rem;
 
         @include for-medium-screens {
+            padding: 0;
             width: 50%;
         }
 
