@@ -37,6 +37,13 @@
         letter-spacing: .6rem;
         width: 100%;
 
+        @include for-medium-screens {
+            animation: main-header-reveal 1.75s 1.3s ease forwards;
+            opacity: 0;
+            transform: translateY(-100vh);
+            transition: transform .5s;
+        }
+
         font: {
             size: 3rem;
             family: $second-font;
@@ -56,21 +63,25 @@
         font-weight: 900;
         position: relative;
 
+        @include for-medium-screens {}
+
+        @media screen and (min-width:1340px) {
+            font-size: 6rem;
+        }
+
         &::after {
             content: url(../../images/icon-arrow-down.svg);
-            animation: beat 1s 2s alternate infinite;
             position: absolute;
             top: 140%;
             left: 45%;
 
             @include for-medium-screens {
+                animation: beat 1s 2s alternate infinite;
                 top: 250%;
                 left: 48%;
             }
 
-            @media screen and (min-width:1340px) {
-                font-size: 6rem;
-            }
+
         }
     }
 }

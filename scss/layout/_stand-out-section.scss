@@ -5,14 +5,21 @@
 .stand-out-section {
     @extend .transform-section;
 
-    &__picture {
-        @extend .transform-section__picture;
-        order: 0;
-    }
+    // &__picture {
+    //     @extend .transform-section__picture;
+    //     order: 0;
+    // }
 
     // --- Image ---
     &__image {
         @extend .transform-section__image;
+        background-image: url(../../images/mobile/image-stand-out.jpg);
+
+        @include for-medium-screens {
+            background-image: url(../../images/desktop/image-stand-out.jpg);
+            order: 0;
+        }
+
     }
 
     // --- Article ---

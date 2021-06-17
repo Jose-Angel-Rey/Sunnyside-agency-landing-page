@@ -8,8 +8,14 @@
     }
 }
 
-@keyframes navbar-top-reveal {
-    to {
+@keyframes main-header-reveal {
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
         transform: none;
+
     }
 }

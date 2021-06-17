@@ -2,14 +2,6 @@
 //      ScrollReveal animations
 // *******************************
 
-// -----  Main header -----
-ScrollReveal().reveal(".main-header__title", {
-  duration: 2500,
-  delay: 1500,
-  origin: "top",
-  distance: "2rem",
-});
-
 // -----  Main content -----
 ScrollReveal().reveal(".transform-section__picture", {
   duration: 2000,

@@ -10,34 +10,20 @@
         flex-wrap: nowrap;
     }
 
-    // --- Picture ---
-    &__picture {
-        @include for-medium-screens {
-            width: 50%;
-            order: 2;
-        }
-    }
-
     // --- Image ---
     &__image {
-        object-fit: cover;
-        object-position: center;
-        min-height: 40vh;
-        max-height: 45rem;
+        background-image: url(../../images/mobile/image-transform.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+        max-height: 50rem;
         width: 100%;
 
-        @media screen and (min-width:750px) and (max-width:768px) {
-            width: 110%;
-        }
-
         @include for-medium-screens {
-            width: 100%;
-            height: max-content;
-        }
-
-        @include for-large-screens {
-            min-height: auto;
-            max-height: none;
+            background-image: url(../../images/desktop/image-transform.jpg);
+            width: 50%;
+            order: 2;
         }
     }
 
