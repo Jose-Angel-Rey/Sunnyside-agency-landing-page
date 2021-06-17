@@ -22,6 +22,7 @@
 
         @include for-medium-screens {
             background-image: url(../../images/desktop/image-transform.jpg);
+            height: 70vh;
             width: 50%;
             order: 2;
         }
