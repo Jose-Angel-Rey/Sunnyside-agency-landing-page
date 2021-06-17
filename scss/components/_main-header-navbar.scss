@@ -122,7 +122,7 @@
             }
 
             &:active {
-                background-color: darken(#6FCFFF, 5%);
+                background-color: $text-decoration-yellow;
                 transform: scale(.95);
             }
 
